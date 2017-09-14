@@ -30,7 +30,6 @@
 		<log4j.version>2.3</log4j.version>
 		<!-- Data Base -->
 		<database.driver>com.mysql.jdbc.Driver</database.driver>
-		<database.url>jdbc:mysql://localhost:3306/eco</database.url>
 	</properties>
 
 	<profiles>
@@ -48,6 +47,8 @@
 				<logs.level.root>debug</logs.level.root>
 				<database.user>root</database.user>
 				<database.password></database.password>
+				<database.url>jdbc:mysql://localhost:3306/spai</database.url>
+				
 			</properties>
 		</profile>
 		<!-- mvn install -Denvironment.type=preproduction -->
@@ -61,8 +62,10 @@
 			</activation>
 			<properties>
 				<logs.level.root>info</logs.level.root>
-				<database.user>myUser</database.user>
-				<database.password>myPass</database.password>
+				<database.user>miwXX</database.user>
+				<database.password>123456</database.password>
+				<database.url>jdbc:mysql://localhost:3306/miwXX</database.url>
+				
 			</properties>
 		</profile>
 		<!-- mvn install -Denvironment.type=production -->
@@ -76,8 +79,10 @@
 			</activation>
 			<properties>
 				<logs.level.root>error</logs.level.root>
-				<database.user>otherUser</database.user>
-				<database.password>otherPass</database.password>
+				<database.user>u3546</database.user>
+				<database.password>654321</database.password>
+				<database.url> jdbc:mysql://localhost:3306/u3546</database.url>
+				
 			</properties>
 		</profile>
 	</profiles>
