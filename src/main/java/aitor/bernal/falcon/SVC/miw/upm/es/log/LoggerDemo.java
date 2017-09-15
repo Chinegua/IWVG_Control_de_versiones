@@ -12,8 +12,4 @@ public class LoggerDemo {
         logger.error("Log de error");
     }
 
-    public static void main(String[] args) {
-        new LoggerDemo().logs();
-    }
-
 }
